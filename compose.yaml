@@ -9,7 +9,7 @@ services:
     ports:
       - ${TRAINTRACKER_POSTGRESQL_PORT:-5432}:5432
   redis:
-    image: redis:7.4.0-alpine
+    image: redis:7.4.2-alpine
     ports:
       - ${TRAINTRACKER_REDIS_PORT:-6379}:6379
   jaeger:
