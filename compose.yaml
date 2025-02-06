@@ -13,7 +13,7 @@ services:
     ports:
       - ${TRAINTRACKER_REDIS_PORT:-6379}:6379
   jaeger:
-    image: jaegertracing/all-in-one:1.59.0
+    image: jaegertracing/all-in-one:1.66.0
     ports:
       - ${TRAINTRACKER_JAEGER_OTLP:-4318}:4318
       - ${TRAINTRACKER_JAEGER_WEB:-16686}:16686
